@@ -6,13 +6,20 @@
 		<title>Django blog</title>
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300" 
 rel="stylesheet">
-		<link rel="stylesheet" href="{% static 'css/base.css' %}">
+		<link href="{% static 'css/base.css' %}" rel="stylesheet">
 	</head>
 	<body>
-		<header>
-			<h1><a href="{% url 'home' %}">Django blog</a></h1>
-		</header>
-		<div>{% block content %} {% endblock content %}</div>
+		<div>
+			<header>
+				<div class="nav-left">
+					<h1><a href="{% url 'home' %}">Django blog</a></h1>
+				</div>
+				<div class="nav-right">
+					<a href="{% url 'post_new' %}">+ New Blog Post</a>
+				</div>
+			</header>
+			{% block content %}
+			{% endblock content %}
+		</div>
 	</body>
-	
 </html>

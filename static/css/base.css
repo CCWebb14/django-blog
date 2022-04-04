@@ -24,16 +24,18 @@ header h1 a {
 }
 
 .post-entry {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem;  
 }
 
 .post-entry h2 {
   margin: 0.5rem 0;
+  text-decoration: none;
 }
 
 .post-entry h2 a,
 .post-entry h2 a:visited {
   color: blue;
+  text-decoration: none;
 }
 
 .post-entry p {
