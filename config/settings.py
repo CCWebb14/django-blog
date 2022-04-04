@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-from django.core.management.utils import get_random_secret_key
 # from decouple import config
 # config.encoding = 'cp1251'
 
@@ -24,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = config('SECRET_KEY')
-SECRET_KEY = get_random_secret_key()
+SECRET_KEY = 'django-insecure-yu^6im2emho$cwxlzjiv0c(_$hq=**exbgiaog-=pv0x6j#)m)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
